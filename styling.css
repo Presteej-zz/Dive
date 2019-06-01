@@ -1,0 +1,353 @@
+* {
+    margin: 0; 
+    padding: 0;
+}
+
+.right-menu li {
+    display: inline-block;     /* Puts the icons in a straight line as opposed to a vertical list */
+    margin-top: 25px !important;
+}
+
+.right-menu li .fa {
+    font-size: 18px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.navbar-brand {
+    /*This is what swaps the location of the logo in the middle.*/
+    left: 50%;
+    top: 25px;
+    transform: translateX(-50%);
+    position: absolute;
+}
+.navbar-brand img {
+    width: 160px;
+}
+
+.header {
+    background: #f5f6fc;
+    margin-bottom: 80px;
+}
+
+.navbar {
+    padding: 0 35px !important;
+}
+
+.navbar-toggler {
+    border: none !important;
+    outline: none !important;
+    padding: 0 !important;
+    margin-top: 30px;
+}
+
+.navbar-toggler .fa {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.banner {
+    position: relative;
+}
+
+.banner-img {
+    margin: 80px 115px;
+    width: 60%;
+}
+
+.banner-img img {
+    width: 100%;
+    margin-bottom: -80px;
+}
+
+.banner-title {
+    position: absolute;
+    left: 50%;
+    top: 20%;
+}
+
+.banner-title h1 {
+    font-size: 55px;
+    background: rgba(0, 0, 0, 0.75);
+    text-align: center;
+    color: #ffffff;
+    line-height: 70px;
+    padding: 0px 10px 0px 10px;
+}
+
+/*------------------------------------------------ DIVE SUMMARY*/
+
+.dive-summary {
+    padding: 100px 0;
+}
+
+.dive-box {
+    margin: 80px 0;
+}
+
+.title-style h1 {
+    padding: 40px 0;
+}
+
+.title-style {
+    margin: 0 auto 80px;
+    height: 120px;
+    width: 80%;
+    max-width: 700px;
+    background: #ffffff;
+    position: relative;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 50, 0.5);
+}
+
+.title-style::after {
+    content:'';
+    height: 100px;
+    width: 200px;
+    background-color: #01063b;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    z-index: -1;
+}
+
+.title-style::before {
+    content:'';
+    height: 100px;
+    width: 200px;
+    background-color: #01063b;
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    z-index: -1;
+}
+
+.products-img {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.products-img img {
+    width: 100%;
+}
+
+.btn-buy {
+    width: 150px;
+    padding: 10px 0; 
+    outline: none !important;
+    border: 0;
+    border-radius: 2px;
+    position: absolute;
+    background: #ffffff;
+    left: 50%; 
+    bottom: 0;
+    transform: translate(-50%, 0);
+    transition: 0.6s;
+    opacity: 0;
+    z-index: 1;
+}
+
+.products-img:hover .btn-buy {
+    transform: translate(-50%, 50%);
+    bottom: 50%;
+    opacity: 1;
+}
+
+.overlay {
+    height: 0;
+    width: 100%;
+    background: #333333;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.products-img:hover .overlay {
+    opacity: 0.5;
+    height: 100%;
+}
+
+/*-----------------------------------------------------OFFER*/
+
+.offer {
+    background-image: url(imgs/clearwater.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.row {
+    margin: initial !important;
+}
+
+.pre-order {
+    max-width: 500px;
+    margin-top: 80px;
+    padding: 60px;
+    background: #ffffff8c;
+    margin-bottom: 20px;
+
+
+}
+
+.pre-order a {
+    width: 100px;
+    display: block;
+    color: #ffffff !important;
+    background: #000000;
+    text-decoration: none;
+    padding: 5px;
+    text-align: center;
+
+
+}
+
+.offer img {
+    width: 300px;
+    height: 400px;
+    margin-bottom: -100px;
+    margin-top: 150px;
+}
+
+/*-------------------------------------------------THE DIVEBLOG*/
+
+.diveblog {
+    margin: 250px 0 150px 0;
+
+}
+
+.diveblog-img {
+    margin-top: 50px;
+    height: 300px;
+    width: 300px;
+    display: inline-block;
+
+}
+
+.diveblog-img img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.diveblog h5 {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/*----------------------------------------------------DIVE PARTNERS*/
+
+.partners {
+    margin-bottom: 150px;
+
+}
+
+.brand-logo {
+    width: 200px;
+    height: 200px;
+    background: #ffffff;
+    border-radius: 50%;
+    margin: 50px auto 30px;
+    box-shadow: 0 2px 40px 0 rgba(110, 130, 208, .18);
+}
+
+.brand-logo img {
+    width: 100px;
+    margin: 45px auto;
+}
+
+.partners p {
+    margin-top: 30px;
+    font-weight: bold;
+
+}
+
+/*----------------------------------------------------------FOOTER*/
+
+.footer {
+    margin-top: 150px;
+    background: #3d3d3f71;
+}
+
+.payment, .insta-img, .download {
+    margin: 50px auto;
+}
+
+.payment img {
+    width: 300px;
+    cursor: pointer;
+}
+
+.insta-img img {
+    width: 75px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.download img {
+    width: 200px;
+}
+
+.footer h5{
+    margin-bottom: 50px;
+
+}
+
+.footer h5::before {
+    content:'';
+    width: 70px;
+    height: 3px;
+    background: #4f74e8;
+    top: 80px;
+    position: absolute;
+}
+
+.footer-icons {
+    text-align: right;
+}
+
+.footer-icons .fa {
+    margin: 0 10px auto;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+/*----------------------------------------------For the smaller screens!*/
+
+@media only screen and (max-width:900px) {
+
+    .banner img {
+        margin: 40px auto;
+        width: 80%;
+    }
+
+    .banner-title {
+        top: 180px;
+        left: 50%;
+        transform: translateX(-50%);
+
+    }
+
+    .banner-title h1 {
+        font-size: 16px;
+        padding: 5px;
+        line-height: 20px;
+    }
+
+    .title-style h1 {
+        font-size: 25px;
+    }
+
+    .offer img {
+        margin-top: 20px !important;
+        margin-bottom: 0px !important;
+    }
+
+    .footer-icons {
+        text-align: center;
+    }
+
+    .copyright {
+        text-align: center;
+    }
+}
