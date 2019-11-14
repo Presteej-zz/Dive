@@ -1,356 +1,318 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Dive Water | A Presteej Project</title>
 
     <!--CSS-->
-    <link rel="stylesheet" href="styling.css">
+    <link rel="stylesheet" href="styling.css" />
 
     <!--FontAwesome CDN-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
     <!--Bootstrap CDN-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
 
     <!-- JS, Popper.js, jQuery-->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
 
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-
-</head>
-
-<body>
-
+  <body>
     <section class="header">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#"
+          ><img src="imgs/DIVELOGO.jpg" alt=""
+        /></a>
 
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa fa-bars"></i>
+        </button>
 
-            <a class="navbar-brand" href="#"><img src="imgs/DIVELOGO.jpg" alt=""></a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">GALLERY</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link" href="#">BELOW THE SURFACE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">#DIVE</a>
+            </li>
+          </ul>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                      <i class="fa fa-bars"></i>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarNav">
-
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">ABOUT</a>
-                    </li>
-                    <li class="nav-item">
-                            <a class="nav-link" href="#">GALLERY</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="" class="nav-link" href="#">BELOW THE SURFACE</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">#DIVE</a>
-                    </li>
-                </ul>
-
-                <ul class="right-menu ml-auto">
-                        <li><i class="fa fa-facebook"></i></li>
-                        <li><i class="fa fa-instagram"></i></li>
-                        <li><i class="fa fa-pinterest"></i></li>
-                        <li><i class="fa fa-youtube"></i>
-                        <li>
-                            <div class="input-group mb-3">
-                                <input type="text" class="form-control" placeholder="Search!">
-                                <div class="input-group-append">
-                                  <span class="input-group-text"><i class="fa fa-search"></i></span>
-                                </div>
-                            </div>
-                        </li>
-                </ul>
-
-            </div>
-        </nav>
-
-        <div class="banner">
-
-            <div class="banner-img">
-                <img src="imgs/dive-banner.png" alt="">
-            </div>
-
-            <div class="banner-title">
-                <h1>DIVE IN.</h1>
-                <h1>THE WATER IS FINE.</h1>
-            </div>
-
+          <ul class="right-menu ml-auto">
+            <li><i class="fa fa-facebook"></i></li>
+            <li><i class="fa fa-instagram"></i></li>
+            <li><i class="fa fa-pinterest"></i></li>
+            <li><i class="fa fa-youtube"></i></li>
+            <li>
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Search!" />
+                <div class="input-group-append">
+                  <span class="input-group-text"
+                    ><i class="fa fa-search"></i
+                  ></span>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
-                  
+      </nav>
+
+      <div class="banner">
+        <div class="banner-img">
+          <img src="imgs/dive-banner.png" alt="" />
+        </div>
+
+        <div class="banner-title">
+          <h1>DIVE IN.</h1>
+          <h1>THE WATER IS FINE.</h1>
+        </div>
+      </div>
     </section>
 
     <!--DIVE TRENDS-->
 
     <section class="dive-summary">
+      <div class="container">
+        <div class="dive-box">
+          <div class="title-style text-center">
+            <h1>TASTE THE ESSENCE OF LIFE</h1>
+          </div>
 
-        <div class="container">
-
-            <div class="dive-box">
-
-                <div class="title-style text-center">
-                        <h1>TASTE THE ESSENCE OF LIFE</h1>
-                </div>
-
-                <p class="text-center">It's simple- we here at Dive love water, and we know you do too. That's why we make it our job to get it to you. Though it's abundant in some places and scarce in others, we believe that everyone in the world should have access to clean water. From some of the most remote and untouched pools on Earth, we bring to you our newest line of sustainably attained, pure, and refreshing water. </p>
-                <p class="text-center">...and yes, diving is allowed.</p>
-
-            </div>
-
-            <div class="row">
-
-                <div class="col-md-4">
-
-                    <div class="products-img">
-
-                        <img src="imgs/bottles.jpg" alt="">
-                        <button type="button" class="btn-buy">Buy Now!</button>
-                        <div class="overlay"></div>
-
-                    </div>
-
-                </div>
-
-                <div class="col-md-4">
-
-                    <div class="products-img">
-
-                        <img src="imgs/jug.png" alt="">
-                        <button type="button" class="btn-buy">Buy Now!</button>
-                        <div class="overlay"></div>
-
-                    </div>
-
-                </div>
-
-                <div class="col-md-4">
-
-                    <div class="products-img">
-
-                        <img src="imgs/cooler.jpg" alt="">
-                        <button type="button" class="btn-buy">Buy Now!</button>
-                        <div class="overlay"></div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
+          <p class="text-center">
+            It's simple- we here at Dive love water, and we know you do too.
+            That's why we make it our job to get it to you. Though it's abundant
+            in some places and scarce in others, we believe that everyone in the
+            world should have access to clean water. From some of the most
+            remote and untouched pools on Earth, we bring to you our newest line
+            of sustainably attained, pure, and refreshing water.
+          </p>
+          <p class="text-center">...and yes, diving is allowed.</p>
         </div>
 
+        <div class="row">
+          <div class="col-md-4">
+            <div class="products-img">
+              <img src="imgs/bottles.jpg" alt="" />
+              <button type="button" class="btn-buy">Buy Now!</button>
+              <div class="overlay"></div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="products-img">
+              <img src="imgs/jug.png" alt="" />
+              <button type="button" class="btn-buy">Buy Now!</button>
+              <div class="overlay"></div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="products-img">
+              <img src="imgs/cooler.jpg" alt="" />
+              <button type="button" class="btn-buy">Buy Now!</button>
+              <div class="overlay"></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-----------------------------------------------------OFFER  -->
 
     <section class="offer">
-
-        <div class="row">
-
-            <div class="col-md-6 text-center">
-                <img src="imgs/drinkingwater.jpg" alt="">
-            </div>
-
-            <div class="col-md-6">
-
-                <div class="pre-order">
-                    <h3>DIVE EXCLUSIVE</h3>
-                    <p>Learn more about how you can pre-order our upcoming release, the Dive Water Filter.</p>
-                    <a href="#">See More</a>
-                </div>
-
-            </div>
-
+      <div class="row">
+        <div class="col-md-6 text-center">
+          <img src="imgs/drinkingwater.jpg" alt="" />
         </div>
 
+        <div class="col-md-6">
+          <div class="pre-order">
+            <h3>DIVE EXCLUSIVE</h3>
+            <p>
+              Learn more about how you can pre-order our upcoming release, the
+              Dive Water Filter.
+            </p>
+            <a href="#">See More</a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!---------------------------------------------------THE DIVEBLOG-->
 
     <section class="diveblog">
+      <div class="title-style text-center">
+        <h1>THE DIVE BLOG</h1>
+      </div>
 
-        <div class="title-style text-center">
-                <h1>THE DIVE BLOG</h1>
-        </div>
-
-        <div class="container">
-
-            <div class="row">
-
-                <div class="col-md-4 text-center">
-
-                    <div class="diveblog-img">
-                        <img src="imgs/craterlake.jpg" alt="">
-                    </div>
-
-                    <h5>Dive Meets Crater Lake</h5>
-
-                </div>
-
-                <div class="col-md-4 text-center">
-
-                    <div class="diveblog-img">
-                        <img src="imgs/drinkingwater2.jpg" alt="">
-                    </div>
-
-                    <h5>Dive Teams with United Nations to Aid in Disaster Relief</h5>
-
-                </div>
-
-                <div class="col-md-4 text-center">
-
-                    <div class="diveblog-img">
-                        <img src="imgs/deadsea.jpg" alt="">
-                    </div>
-        
-                    <h5>Saving our Water Sources</h5>
-
-                </div>
-
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 text-center">
+            <div class="diveblog-img">
+              <img src="imgs/craterlake.jpg" alt="" />
             </div>
 
-        </div>
+            <h5>Dive Meets Crater Lake</h5>
+          </div>
 
+          <div class="col-md-4 text-center">
+            <div class="diveblog-img">
+              <img src="imgs/drinkingwater2.jpg" alt="" />
+            </div>
+
+            <h5>Dive Teams with United Nations to Aid in Disaster Relief</h5>
+          </div>
+
+          <div class="col-md-4 text-center">
+            <div class="diveblog-img">
+              <img src="imgs/deadsea.jpg" alt="" />
+            </div>
+
+            <h5>Saving our Water Sources</h5>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-------------------------------------------------DIVE PARTNERS-->
 
     <section class="partners">
-    
-        <div class="title-style text-center">
-                <h1>PROUD PARTNERS</h1>
-        </div>
+      <div class="title-style text-center">
+        <h1>PROUD PARTNERS</h1>
+      </div>
 
-        <div class="container">
-
-            <div class="row text-center">
-
-                <div class="col-md-3">
-
-                    <div class="brand-logo">
-                        <img src="imgs/redphoenix.jpg" alt="">
-                    </div>
-                        
-                    <p>Red Phoenix</p>
-
-                </div>
-
-                <div class="col-md-3">
-                        
-                    <div class="brand-logo">
-                        <img src="imgs/oak.jpg" alt="">
-                    </div>
-                                
-                    <p>Oak</p>
-        
-                </div>
-
-                <div class="col-md-3">
-                        
-                    <div class="brand-logo">
-                        <img src="imgs/plug.jpg" alt="">
-                    </div>
-                                
-                    <p>Plug Technologies</p>
-        
-                </div>
-
-                <div class="col-md-3">
-                        
-                    <div class="brand-logo">
-                        <img src="imgs/simpleglobal.jpg" alt="">
-                    </div>
-                                
-                    <p>Simple Global</p>
-        
-                </div>
-
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-3">
+            <div class="brand-logo">
+              <img src="imgs/redphoenix.jpg" alt="" />
             </div>
 
-        </div>
+            <p>Red Phoenix</p>
+          </div>
 
+          <div class="col-md-3">
+            <div class="brand-logo">
+              <img src="imgs/oak.jpg" alt="" />
+            </div>
+
+            <p>Oak</p>
+          </div>
+
+          <div class="col-md-3">
+            <div class="brand-logo">
+              <img src="imgs/plug.jpg" alt="" />
+            </div>
+
+            <p>Plug Technologies</p>
+          </div>
+
+          <div class="col-md-3">
+            <div class="brand-logo">
+              <img src="imgs/simpleglobal.jpg" alt="" />
+            </div>
+
+            <p>Simple Global</p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!---------------------------------------------------------------FOOTER-->
 
     <section class="footer">
-
-        <div class="container">
-
-            <div class="row">
-
-                <div class="col-md-4">
-
-                    <div class="payment">
-                        <h5>ACCEPTED PAYMENT METHODS</h5>
-                        <img src="imgs/payments.png" alt="">
-                    </div>
-
-                </div>
-
-                <div class="col-md-4">
-
-                    <div class="insta-img">
-                        <h5>DIVE ON INSTAGRAM</h5>
-                        <img src="imgs/diveig1.jpg" alt="">
-                        <img src="imgs/diveig2.jpg" alt="">
-                        <img src="imgs/diveig3.jpg" alt="">
-                        <img src="imgs/diveig4.jpg" alt="">
-                        <img src="imgs/diveig5.jpg" alt="">
-                        <img src="imgs/diveig6.jpg" alt="">
-                        <img src="imgs/diveig7.jpg" alt="">
-                        <img src="imgs/diveig8.jpg" alt="">
-                    </div>
-
-                </div>
-
-                <div class="col-md-4">
-
-                    <div class="download">
-                        <h5>DIVE ON WECHAT</h5>
-                        <img src="imgs/wechatqr.jpg" alt="">
-                    </div>
-
-                </div>
-
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="payment">
+              <h5>ACCEPTED PAYMENT METHODS</h5>
+              <img src="imgs/payments.png" alt="" />
             </div>
+          </div>
 
-            <hr>
-
-            <div class="row">
-
-                <div class="col-md-8">
-                    <p class="copyright">A Presteej Project. TeJaun RiChard. 2019. All Rights Reserved.</p>
-                </div>
-
-                <div class="col-md-4">
-
-                    <div class="footer-icons">
-                        <i class="fa fa-facebook"></i>
-                        <i class="fa fa-instagram"></i>
-                        <i class="fa fa-linkedin"></i>
-                        <i class="fa fa-github"></i>
-                        <i class="fa fa-youtube-play"></i>
-                        <i class="fa fa-twitter"></i>
-
-                    </div>
-
-                </div>
-
+          <div class="col-md-4">
+            <div class="insta-img">
+              <h5>DIVE ON INSTAGRAM</h5>
+              <img src="imgs/diveig1.jpg" alt="" />
+              <img src="imgs/diveig2.jpg" alt="" />
+              <img src="imgs/diveig3.jpg" alt="" />
+              <img src="imgs/diveig4.jpg" alt="" />
+              <img src="imgs/diveig5.jpg" alt="" />
+              <img src="imgs/diveig6.jpg" alt="" />
+              <img src="imgs/diveig7.jpg" alt="" />
+              <img src="imgs/diveig8.jpg" alt="" />
             </div>
+          </div>
 
+          <div class="col-md-4">
+            <div class="download">
+              <h5>DIVE ON WECHAT</h5>
+              <img src="imgs/wechatqr.jpg" alt="" />
+            </div>
+          </div>
         </div>
 
-    </section>
-    
-</body>
+        <hr />
 
+        <div class="row">
+          <div class="col-md-8">
+            <p class="copyright">
+              A Presteej Project. TeJaun RiChard. 2019. All Rights Reserved.
+            </p>
+          </div>
+
+          <div class="col-md-4">
+            <div class="footer-icons">
+              <i class="fa fa-facebook"></i>
+              <i class="fa fa-instagram"></i>
+              <i class="fa fa-linkedin"></i>
+              <i class="fa fa-github"></i>
+              <i class="fa fa-youtube-play"></i>
+              <i class="fa fa-twitter"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
